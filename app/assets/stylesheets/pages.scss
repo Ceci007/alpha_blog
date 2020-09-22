@@ -6,6 +6,7 @@
 :root {
   --bg-btn-primary: linear-gradient(to right bottom, #DD75FC, #F93B6C);
   --bg-btn-primary-hover: linear-gradient(to right bottom, #d75ffc, #fa245a);
+  --title-color:  #DD75FC;
 }
 
 html {
@@ -39,14 +40,16 @@ body {
   padding: 1rem 3rem;
 }
 
-.btn-primary {
-  border: 1px solid var(--bg-btn-primary);
+.btn-primary, .btn-border-primary:hover {
+  border: 1px solid var(--title-color);
   background-image: var(--bg-btn-primary);
+  color: white;
 }
 
 .btn-primary:hover {
-  border: 1px solid var(--bg-btn-primary-hover);
+  border: 1px solid var(--title-color);
   background-image: var(--bg-btn-primary-hover);
+  color: white;
 }
 
 .lead {
@@ -59,4 +62,25 @@ body {
 
 #sticky-footer {
   flex-shrink: none;
+}
+
+.link:link, .link:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 0.2rem solid black;
+  font-weight: bold;
+}
+
+.title {
+  color: var(--title-color);
+  font-size: 2.2rem;
+}
+
+.btn-border-primary {
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
+}
+
+.form-control {
+  font-size: 1.8rem;
 }

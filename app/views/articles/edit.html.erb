@@ -1,5 +1,7 @@
-<h1>Edit article</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Cancel edit', articles_path %>
+<div id="page-content" class="container" >
+  <h1 class="text-center mt-5 mb-4">Edit article</h1>
+  <%= render 'form' %>
+  <div class="my-4">
+    <%= link_to 'Cancel edit', articles_path, class: "link" %>
+  </div>
+</div>
