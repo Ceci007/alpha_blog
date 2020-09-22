@@ -1,3 +1,50 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import 'bootstrap/dist/css/bootstrap';
+:root {
+  --bg-btn-primary: linear-gradient(to right bottom, #DD75FC, #F93B6C);
+  --bg-btn-primary-hover: linear-gradient(to right bottom, #d75ffc, #fa245a);
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+}
+
+.navbar {
+  background-color: #FFF !important;
+  box-shadow: 0 0 4rem rgba(0,0,0,0.3);
+  font-size: 2rem;
+}
+
+.jumbotron {
+  font-size: 2.2rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+}
+
+.btn-primary {
+  border: 1px solid var(--bg-btn-primary);
+  background-image: var(--bg-btn-primary);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--bg-btn-primary-hover);
+  background-image: var(--bg-btn-primary-hover);
+}
+
+.lead {
+  font-size: 1.8rem !important;
+}
