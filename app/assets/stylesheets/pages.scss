@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import 'bootstrap/dist/css/bootstrap';
+
 :root {
   --bg-btn-primary: linear-gradient(to right bottom, #DD75FC, #F93B6C);
   --bg-btn-primary-hover: linear-gradient(to right bottom, #d75ffc, #fa245a);
@@ -9,10 +10,12 @@
 
 html {
   font-size: 62.5% !important;
+  height: 100%;
 }
 
 body {
   font-size: 1.8rem;
+  height: 100%;
 }
 
 .navbar-brand {
@@ -23,6 +26,7 @@ body {
   background-color: #FFF !important;
   box-shadow: 0 0 4rem rgba(0,0,0,0.3);
   font-size: 2rem;
+  padding: 1rem 3rem;
 }
 
 .jumbotron {
@@ -47,4 +51,12 @@ body {
 
 .lead {
   font-size: 1.8rem !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
