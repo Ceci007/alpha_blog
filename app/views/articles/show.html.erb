@@ -1,0 +1,23 @@
+<div class="container" >
+  <h1 class="text-center mt-5 mb-4">Articles detail info</h1>
+
+  <div class="card text-center shadow mb-5 bg-white rounded">
+      <div class="card-header font-italic">
+        by Cecilia Benitez
+      </div>
+      <div class="card-body">
+        <h5 class="card-title title text-left"><%= @article.title %></h5>
+        <div class="card-text text-left"><%= simple_format(@article.description) %></div>
+        <div class="text-left">
+          <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-outline-info" %> |
+          <%= link_to 'Delete', article_path(@article), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure?" } %>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= time_ago_in_words(@article.updated_at) %> ago</small>
+      </div>
+    </div>
+    <div class="my-4">
+      <%= link_to 'Back to articles', articles_path, class: "link" %>
+    </div>
+</div>

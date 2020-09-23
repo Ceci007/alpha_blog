@@ -1,0 +1,107 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import 'bootstrap/dist/css/bootstrap';
+
+:root {
+  --bg-btn-primary: linear-gradient(to right bottom, #DD75FC, #F93B6C);
+  --bg-btn-primary-hover: linear-gradient(to right bottom, #d75ffc, #fa245a);
+  --title-color:  #DD75FC;
+}
+
+html {
+  font-size: 62.5% !important;
+  height: 100%;
+}
+
+body {
+  font-size: 1.8rem;
+  height: 100%;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+}
+
+.navbar {
+  background-color: #FFF !important;
+  box-shadow: 0 0 4rem rgba(0,0,0,0.3);
+  font-size: 2rem;
+  padding: 1rem 3rem;
+}
+
+.jumbotron {
+  font-size: 2.2rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+}
+
+.btn-primary, .btn-border-primary:hover {
+  border: 1px solid var(--title-color);
+  background-image: var(--bg-btn-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--title-color);
+  background-image: var(--bg-btn-primary-hover);
+  color: white;
+}
+
+.lead {
+  font-size: 1.8rem !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.link:link, .link:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 0.2rem solid black;
+  font-weight: bold;
+}
+
+.title {
+  color: var(--title-color);
+  font-size: 2.2rem;
+}
+
+.btn-border-primary {
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
+}
+
+.form-control {
+  font-size: 1.8rem;
+}
+
+.dropdown-menu {
+  font-size: 1.6rem;
+}
+
+.close {
+  font-size: 2.2rem !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="text"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #ccc !important;
+}
