@@ -1,0 +1,15 @@
+<%= render 'shared/errors' %>
+<%= form_with(model: @article, local: true) do |f| %>
+  <div class="form-group">
+    <label for="title"><%= f.label :title %></label>
+    <%= f.text_field :title, class: "form-control shadow rounded", id: "title" %>
+    <small class="form-text text-muted">Write something descriptive</small>
+  </div>
+  <div class="form-group">
+    <label for="description"><%= f.label :description %></label>
+    <%= f.text_area :description, class: "form-control shadow rounded", id: "description", rows: "10" %>
+  </div>
+  <div class="my-3">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

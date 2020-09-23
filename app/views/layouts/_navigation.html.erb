@@ -1,0 +1,27 @@
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <%= link_to 'ALPHA BLOG', root_path, class: "navbar-brand" %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to 'Home', root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'About', about_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Articles
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to 'Create new article', new_article_path, class: "dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <%= link_to 'View articles', articles_path, class: "dropdown-item" %>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
