@@ -1,4 +1,4 @@
-<%= render 'shared/errors' %>
+<%= render 'shared/errors', obj: @article %>
 <%= form_with(model: @article, local: true) do |f| %>
   <div class="form-group">
     <label for="title"><%= f.label :title %></label>

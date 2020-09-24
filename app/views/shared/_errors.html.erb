@@ -1,4 +1,4 @@
-<% if @article.errors.any? %>
+<% if obj.errors.any? %>
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <p>The following errors below prevented the article from being <strong>saved:</strong></p>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -6,7 +6,7 @@
     </button>
     <hr>
     <ul>
-      <% @article.errors.full_messages.each do |msg| %>
+      <% obj.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
     </ul>
