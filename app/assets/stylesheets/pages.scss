@@ -4,9 +4,9 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 :root {
-  --bg-btn-primary: linear-gradient(to right bottom, #DD75FC, #F93B6C);
+  --bg-btn-primary: linear-gradient(to right bottom, #dd75fc, #f93b6c);
   --bg-btn-primary-hover: linear-gradient(to right bottom, #d75ffc, #fa245a);
-  --title-color:  #DD75FC;
+  --title-color: #dd75fc;
 }
 
 html {
@@ -24,8 +24,8 @@ body {
 }
 
 .navbar {
-  background-color: #FFF !important;
-  box-shadow: 0 0 4rem rgba(0,0,0,0.3);
+  background-color: #fff !important;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
   font-size: 2rem;
   padding: 1rem 3rem;
 }
@@ -40,18 +40,6 @@ body {
   padding: 1rem 3rem;
 }
 
-.btn-primary, .btn-border-primary:hover {
-  border: 1px solid var(--title-color);
-  background-image: var(--bg-btn-primary);
-  color: white;
-}
-
-.btn-primary:hover {
-  border: 1px solid var(--title-color);
-  background-image: var(--bg-btn-primary-hover);
-  color: white;
-}
-
 .lead {
   font-size: 1.8rem !important;
 }
@@ -61,10 +49,11 @@ body {
 }
 
 #sticky-footer {
-  flex-shrink: none;
+  flex-shrink: 0;
 }
 
-.link:link, .link:visited {
+.link:link,
+.link:visited {
   color: black;
   text-decoration: none;
   border-bottom: 0.2rem solid black;
@@ -96,12 +85,26 @@ body {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   outline: none;
-  box-shadow:none !important;
-  border:1px solid #ccc !important;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+.btn-primary,
+.btn-border-primary:hover {
+  border: 1px solid var(--title-color);
+  background-image: var(--bg-btn-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--title-color);
+  background-image: var(--bg-btn-primary-hover);
+  color: white;
 }
