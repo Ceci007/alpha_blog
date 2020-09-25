@@ -1,0 +1,19 @@
+<%= render 'shared/errors', obj: @user %>
+<%= form_with(model: @user, local: true) do |f| %>
+  <div class="form-group">
+    <label for="username"><%= f.label :username %></label>
+    <%= f.text_field :username, class: "form-control shadow rounded", id: "username", placeholder: "Enter a username" %>
+    <small class="form-text text-muted">Enter your username</small>
+  </div>
+  <div class="form-group">
+    <label for="email"><%= f.label :email %></label>
+    <%= f.email_field :email, class: "form-control shadow rounded", id: "email", placeholder: "Enter your email address" %>
+  </div>
+  <div class="form-group">
+    <label for="password"><%= f.label :password %></label>
+    <%= f.password_field :password, class: "form-control shadow rounded", id: "password", placeholder: "Choose a password" %>
+  </div>
+  <div class="my-3">
+    <%= f.submit "Sign up", class: "btn btn-primary" %>
+  </div>
+<% end %>
