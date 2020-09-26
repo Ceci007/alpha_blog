@@ -14,6 +14,6 @@
     <%= f.password_field :password, class: "form-control shadow rounded", id: "password", placeholder: "Choose a password" %>
   </div>
   <div class="my-3">
-    <%= f.submit "Sign up", class: "btn btn-primary" %>
+    <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "btn btn-primary") %>
   </div>
 <% end %>

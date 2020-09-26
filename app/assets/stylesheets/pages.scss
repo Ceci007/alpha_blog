@@ -96,6 +96,10 @@ textarea {
   border: 1px solid #ccc !important;
 }
 
+.circle {
+  border-radius: 50%;
+}
+
 .btn-primary,
 .btn-border-primary:hover {
   border: 1px solid var(--title-color);
