@@ -1,6 +1,6 @@
 <div class="container" >
   <h1 class="text-center mt-5 mb-4">Login for Blogger-Ceci-App</h1>
-  
+    
     <%= form_with(scope: :session, url: login_path, local: true) do |f| %>
       <div class="form-group">
         <label for="email"><%= f.label :email %></label>
@@ -11,7 +11,7 @@
         <%= f.password_field :password, class: "form-control shadow rounded", id: "password", placeholder: "Enter your password" %>
       </div>
       <div class="my-3">
-        <%= f.submit "Login", class: "btn btn-primary" %>
+        <%= f.submit "Log in", class: "btn btn-primary" %>
       </div>
     <% end %>
 
