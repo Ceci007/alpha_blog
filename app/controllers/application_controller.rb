@@ -10,4 +10,3 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 end
-# rubocop:enable Style/DoubleNegation
