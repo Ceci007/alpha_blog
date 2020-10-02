@@ -1,6 +1,9 @@
 <div class="container" >
   <h1 class="text-center mt-5 mb-4">Alpha bloggers</h1>
 
+  <div class="flickr_pagination my-3">
+    <%= will_paginate @users, :container => false %>
+  </div>
     <% @users.each do |user| %>
     <div class="card text-center shadow mb-5 bg-white rounded">
       <div class="card-header font-italic">
