@@ -1,4 +1,3 @@
-# rubocop:disable Style/DoubleNegation
 class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
@@ -7,6 +6,6 @@ class ApplicationController < ActionController::Base
   end
 
   def logged_in?
-    !!current_user
+    !current_user.nil?
   end
 end
