@@ -9,7 +9,7 @@
         <h5 class="card-title title"><%= article.title %></h5>
         <p class="card-text"><%= truncate(article.description, length: 100) %></p>
         <%= link_to 'Details', article_path(article), class: "btn btn-border-primary" %> 
-        <% if logged_in? && article.user == current_user %>
+        <% if logged_in? && (article.user == current_user || current_user.admin?) %>
           <%= link_to 'Edit', edit_article_path(article), class: "btn btn-outline-info" %> 
           <%= link_to 'Delete', article_path(article), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure?" } %>
         <% end %>
