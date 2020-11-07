@@ -4,6 +4,9 @@
       <% if article.user %>
         by <%= link_to article.user.username, user_path(article.user), class: "link"  %>
       <% end %>
+      <% if article.categories.any? %>
+        <div class="mt-2"><%= render article.categories %></div> 
+      <% end %>
       </div>
       <div class="card-body">
         <h5 class="card-title title"><%= article.title %></h5>
